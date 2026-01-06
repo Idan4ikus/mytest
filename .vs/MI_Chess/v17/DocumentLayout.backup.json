@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|solutionrelative:Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|solutionrelative:Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|solutionrelative:Piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\TheRook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|solutionrelative:TheRook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\TheRook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|solutionrelative:TheRook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|solutionrelative:Pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Pawn.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AA9DCFB-6E46-2387-2827-502C693F0AC4}|MI_Chess.vcxproj|solutionrelative:Pawn.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pawn.h",
+              "DocumentMoniker": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Pawn.h",
+              "RelativeDocumentMoniker": "Pawn.h",
+              "ToolTip": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Pawn.h",
+              "RelativeToolTip": "Pawn.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-31T17:55:35.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pawn.cpp",
+              "DocumentMoniker": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Pawn.cpp",
+              "RelativeDocumentMoniker": "Pawn.cpp",
+              "ToolTip": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Pawn.cpp",
+              "RelativeToolTip": "Pawn.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-29T17:23:11.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Board.cpp",
+              "DocumentMoniker": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Board.cpp",
+              "RelativeDocumentMoniker": "Board.cpp",
+              "ToolTip": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Board.cpp",
+              "RelativeToolTip": "Board.cpp",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAKoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "OverriddenGroupName": "",
+              "WhenOpened": "2025-12-29T17:23:09.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Piece.h",
+              "DocumentMoniker": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Piece.h",
+              "RelativeDocumentMoniker": "Piece.h",
+              "ToolTip": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Piece.h",
+              "RelativeToolTip": "Piece.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-29T19:48:27.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TheRook.cpp",
+              "DocumentMoniker": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\TheRook.cpp",
+              "RelativeDocumentMoniker": "TheRook.cpp",
+              "ToolTip": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\TheRook.cpp",
+              "RelativeToolTip": "TheRook.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-29T19:49:10.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TheRook.h",
+              "DocumentMoniker": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\TheRook.h",
+              "RelativeDocumentMoniker": "TheRook.h",
+              "ToolTip": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\TheRook.h",
+              "RelativeToolTip": "TheRook.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-29T19:46:38.308Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Board.h",
+              "DocumentMoniker": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Board.h",
+              "RelativeDocumentMoniker": "Board.h",
+              "ToolTip": "C:\\Users\\Eleven\\Desktop\\Ekronot-Ex07-08-moshecarmeli7\\Board.h",
+              "RelativeToolTip": "Board.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-29T17:22:48.025Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

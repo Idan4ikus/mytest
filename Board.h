@@ -1,0 +1,23 @@
+#pragma once
+#include <string>
+#include "Piece.h"
+#include "Empty.h"
+
+class Board {
+public:
+    Piece* board[8][8];   
+    Piece* lastEatedPiece;
+    Empty em;
+    int currPlayer;
+
+    Board();
+
+    Board UpdateBoard(std::string curr, std::string dest);
+	std::string WhereKing(int color);
+    Piece* checkpiece(std::string place);
+    int converter(char ch);
+    bool isCheck(int color);
+    bool isLegalMove(std::string curr, std::string dest);
+    Board undoMove(std::string curr, std::string dest);
+
+};

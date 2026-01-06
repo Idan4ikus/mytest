@@ -1,0 +1,269 @@
+﻿  Bishop.cpp
+  Board.cpp
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(3,22): error C2504: 'Piece': base class undefined
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(5,6): error C3668: 'Empty::isValidMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(6,6): error C3668: 'Empty::checkEat': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,41): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Bishop.cpp(29,12): error C2039: 'board': is not a member of 'Board'
+      C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(6,7):
+      see declaration of 'Board'
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Piece.h(11,8): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Board.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Piece.h(11,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Board.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Piece.h(11,11): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Board.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.cpp(23,20): error C2660: 'Piece::isValidMove': function does not take 3 arguments
+      C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Piece.h(13,14):
+      see declaration of 'Piece::isValidMove'
+      C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.cpp(23,20):
+      while trying to match the argument list '(std::string, std::string, int)'
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.cpp(52,29): warning C4390: ';': empty controlled statement found; is this the intent?
+  Empty.cpp
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Empty.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Empty.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Empty.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(9,11): error C3646: 'em': unknown override specifier
+  (compiling source file 'Empty.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(9,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Empty.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Empty.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Empty.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,41): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Empty.cpp')
+  
+  Source.cpp
+  stdafx.cpp
+  King.cpp
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(3,22): error C2504: 'Piece': base class undefined
+  (compiling source file 'King.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(5,6): error C3668: 'Empty::isValidMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'King.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(6,6): error C3668: 'Empty::checkEat': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'King.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'King.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'King.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'King.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'King.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'King.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,41): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'King.cpp')
+  
+  Knight.cpp
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(3,22): error C2504: 'Piece': base class undefined
+  (compiling source file 'Knight.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(5,6): error C3668: 'Empty::isValidMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Knight.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(6,6): error C3668: 'Empty::checkEat': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Knight.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Knight.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Knight.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Knight.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Knight.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Knight.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,41): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Knight.cpp')
+  
+  Pawn.cpp
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(3,22): error C2504: 'Piece': base class undefined
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(5,6): error C3668: 'Empty::isValidMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(6,6): error C3668: 'Empty::checkEat': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,41): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Pawn.cpp(30,17): error C2039: 'board': is not a member of 'Board'
+      C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(6,7):
+      see declaration of 'Board'
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Pawn.cpp(39,17): error C2039: 'board': is not a member of 'Board'
+      C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(6,7):
+      see declaration of 'Board'
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Pawn.cpp(39,67): error C2039: 'board': is not a member of 'Board'
+      C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(6,7):
+      see declaration of 'Board'
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Pawn.cpp(56,25): error C2039: 'board': is not a member of 'Board'
+      C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(6,7):
+      see declaration of 'Board'
+  
+  Piece.cpp
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(3,22): error C2504: 'Piece': base class undefined
+  (compiling source file 'Piece.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(5,6): error C3668: 'Empty::isValidMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Piece.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(6,6): error C3668: 'Empty::checkEat': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Piece.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Piece.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Piece.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Piece.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Piece.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Piece.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,41): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Piece.cpp')
+  
+  Queen.cpp
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(3,22): error C2504: 'Piece': base class undefined
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(5,6): error C3668: 'Empty::isValidMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(6,6): error C3668: 'Empty::checkEat': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,41): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Queen.cpp(34,18): error C2039: 'board': is not a member of 'Board'
+      C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(6,7):
+      see declaration of 'Board'
+  
+  TheRook.cpp
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(3,22): error C2504: 'Piece': base class undefined
+  (compiling source file 'TheRook.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(5,6): error C3668: 'Empty::isValidMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'TheRook.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Empty.h(6,6): error C3668: 'Empty::checkEat': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'TheRook.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'TheRook.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'TheRook.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(8,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'TheRook.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'TheRook.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'TheRook.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(15,41): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'TheRook.cpp')
+  
+C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\TheRook.cpp(27,12): error C2039: 'board': is not a member of 'Board'
+      C:\Users\User\Desktop\important\magshimim\CPP\Ekronot-Ex07-08-moshecarmeli7\Board.h(6,7):
+      see declaration of 'Board'
+  
+  Generating Code...
