@@ -6,6 +6,7 @@
 #include "Queen.h"
 #include "King.h"
 #include "Empty.h"
+#include <cctype>
 
 /// <summary>
 /// sets the board at the begining stage
@@ -22,12 +23,14 @@ Board::Board()
         wp->color = 0;
         wp->hasMoved = false;
         wp->bd = this;
+        wp->pose = std::string{ static_cast<char>('a' + j), '2' };
         board[1][j] = wp;
 
         Pawn* bp = new Pawn();
         bp->color = 1;
         bp->hasMoved = false;
         bp->bd = this;
+        bp->pose = std::string{ static_cast<char>('a' + j), '7' };
         board[6][j] = bp;
     }
 
@@ -47,13 +50,18 @@ Board::Board()
         whitePieces[j]->color = 0;
         whitePieces[j]->hasMoved = false;
         whitePieces[j]->bd = this;
+        whitePieces[j]->pose = std::string{ static_cast<char>('a' + j), '1' };
         board[0][j] = whitePieces[j];
 
         blackPieces[j]->color = 1;
         blackPieces[j]->hasMoved = false;
         blackPieces[j]->bd = this;
+        blackPieces[j]->pose = std::string{ static_cast<char>('a' + j), '8' };
         board[7][j] = blackPieces[j];
     }
+
+    lastEatedPiece = &em;
+    currPlayer = 0;
 }
 
 /// <summary>
@@ -63,7 +71,24 @@ Board::Board()
 /// <param name="dest"></param>
 /// <returns></returns>
 Board Board::UpdateBoard(std::string curr, std::string dest)
-{ }
+{
+    int srcCol = converter(curr[0]);
+    int srcRow = curr[1] - '1';
+    int dstCol = converter(dest[0]);
+    int dstRow = dest[1] - '1';
+
+    lastEatedPiece = board[dstRow][dstCol];
+
+    Piece* moving = board[srcRow][srcCol];
+    moving->hasMoved = true;
+    moving->pose = dest;
+
+    board[dstRow][dstCol] = moving;
+    board[srcRow][srcCol] = new Empty();
+
+    currPlayer = 1 - currPlayer;
+    return *this;
+}
 
 /// <summary>
 /// converts the char to the right int
@@ -101,7 +126,8 @@ std::string Board::WhereKing(int color)
         {
             if (board[i][j]->isKing() && board[i][j]->color == color)
             {
-                res += (j + 'a') + (i + '1');
+                res.push_back('a' + j);
+                res.push_back('1' + i);
                 return res;
             }
         }
@@ -124,8 +150,10 @@ bool Board::isCheck(int color)
             {
                 if (board[i][j]->color != color)
                 {
-                    int ret = board[i][j]->isValidMove(board[i][j]->pose, KP) == true;
-                    return ret == 0;
+                    if (board[i][j]->isValidMove(board[i][j]->pose, KP) == 0)
+                    {
+                        return true;
+                    }
 
                 }
             }
@@ -149,17 +177,25 @@ Board Board::undoMove(std::string curr, std::string dst)
 
     Piece* p1 = board[dstRow][dstCol];
     board[srcRow][srcCol] = p1;
+    p1->pose = curr;
     Piece* p2 = lastEatedPiece;
     board[dstRow][dstCol] = p2;
+    currPlayer = 1 - currPlayer;
     
     return *this;
 }
 
 
-bool Board::isLegalMove(std::string curr, std::string dest)
+int Board::isLegalMove(std::string curr, std::string dest)
 {
+    if (curr.length() < 2 || dest.length() < 2)
+        return 5;
+
     Piece* dstP = checkpiece(dest);
     Piece* srcP = checkpiece(curr);
+
+    if (srcP->isEmpty())
+        return 6;
 
     if (srcP->color != currPlayer)
         return 2;
@@ -167,6 +203,22 @@ bool Board::isLegalMove(std::string curr, std::string dest)
     if (srcP->color == dstP->color)
         return 3;
 
-    if (curr[0] > 'f' || dest[0] > 'f' || curr[1] - '1' > 8 || dest[1] - '1' > 8)
+    if (curr[0] > 'h' || dest[0] > 'h' || curr[1] < '1' || dest[1] < '1' || curr[1] > '8' || dest[1] > '8')
         return 5;
+
+    int moveCheck = srcP->isValidMove(curr, dest);
+    if (moveCheck != 0)
+        return moveCheck;
+
+    int movingColor = srcP->color;
+    UpdateBoard(curr, dest);
+
+    if (isCheck(movingColor))
+    {
+        undoMove(curr, dest);
+        currPlayer = movingColor;
+        return 4;
+    }
+
+    return 0;
 }

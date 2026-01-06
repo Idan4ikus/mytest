@@ -1,15 +1,17 @@
 #pragma once
 #include <string>
-#include "Board.h"
+
+class Board;
 
 class Piece {
 public:
-	int color;
+	int color = 0;
 	std::string type;
-	bool hasMoved;
+	bool hasMoved = false;
 	std::string pose;
-	Board *bd;
+	Board* bd = nullptr;
 
+	virtual ~Piece() = default;
 	virtual int isValidMove(std::string curr, std::string dest);
 	virtual int checkEat(std::string curr, std::string dest);
 	virtual bool isEmpty();

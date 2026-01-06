@@ -1,7 +1,8 @@
-#pragma once
 #include <cmath>
+#include <cctype>
 #include "Piece.h"
 #include "Pawn.h"
+#include "Board.h"
 #include <string>
 
 int Pawn::isValidMove(std::string curr, std::string dest)
@@ -62,6 +63,4 @@ int Pawn::checkEat(std::string curr, std::string dest)
 
     return 0; 
 }
-
-
 
