@@ -1,6 +1,5 @@
-#pragma once
+#include <cctype>
 #include "King.h"
-#include "string.h"
 
 int King::isValidMove(std::string curr, std::string dest)
 {
@@ -24,5 +23,3 @@ int King::isValidMove(std::string curr, std::string dest)
 
 
 int King::checkEat(std::string curr, std::string dest) { return isValidMove(curr,dest); }
-
-bool isEmpty() { return false; }

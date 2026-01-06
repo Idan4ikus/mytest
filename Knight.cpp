@@ -1,10 +1,9 @@
-#pragma once 
 #include <cmath>
+#include <cctype>
 #include "Knight.h"
 #include "Piece.h"
-#include "Board.h"
 
-int isValidMove(std::string curr , std::string dst)
+int Knight::isValidMove(std::string curr , std::string dst)
 {
 	if (curr == dst)
 		return 7;
@@ -22,4 +21,4 @@ int isValidMove(std::string curr , std::string dst)
 	return res;
 }
 
-int checkEat(std::string curr, std::string dst) { return isValidMove(curr , dst); }
+int Knight::checkEat(std::string curr, std::string dst) { return isValidMove(curr , dst); }

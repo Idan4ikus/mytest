@@ -1,6 +1,5 @@
-#pragma once 
+#include <cctype>
 #include "Queen.h"
-#include "Piece.h"
 #include "Board.h"
 
 int Queen::isValidMove(std::string curr, std::string dest)

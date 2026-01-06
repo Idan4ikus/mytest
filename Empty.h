@@ -4,6 +4,6 @@ class Empty : public Piece {
 public:
 	int isValidMove(std::string curr, std::string dest) override;
 	int	checkEat(std::string curr, std::string dest) override;
-	bool isEmpty() { return false; }
-	bool isKing() { return false; }
+	bool isEmpty() override { return true; }
+	bool isKing() override { return false; }
 };

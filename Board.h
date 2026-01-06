@@ -1,7 +1,8 @@
 #pragma once
 #include <string>
-#include "Piece.h"
 #include "Empty.h"
+
+class Piece;
 
 class Board {
 public:
@@ -17,7 +18,7 @@ public:
     Piece* checkpiece(std::string place);
     int converter(char ch);
     bool isCheck(int color);
-    bool isLegalMove(std::string curr, std::string dest);
+    int isLegalMove(std::string curr, std::string dest);
     Board undoMove(std::string curr, std::string dest);
 
 };
