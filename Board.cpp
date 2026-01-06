@@ -15,7 +15,7 @@ Board::Board()
 {
     for (int i = 0; i < 8; i++)
         for (int j = 0; j < 8; j++)
-            board[i][j] = new Empty();
+            board[i][j] = &em;
 
     for (int j = 0; j < 8; j++)
     {
@@ -60,6 +60,7 @@ Board::Board()
         board[7][j] = blackPieces[j];
     }
 
+    em.bd = this;
     lastEatedPiece = &em;
     currPlayer = 0;
 }
@@ -84,7 +85,7 @@ Board Board::UpdateBoard(std::string curr, std::string dest)
     moving->pose = dest;
 
     board[dstRow][dstCol] = moving;
-    board[srcRow][srcCol] = new Empty();
+    board[srcRow][srcCol] = &em;
 
     currPlayer = 1 - currPlayer;
     return *this;
@@ -119,20 +120,17 @@ Piece* Board::checkpiece(std::string place)
 
 std::string Board::WhereKing(int color)
 {
-    std::string res = "";
     for (int i = 0; i < 8; i++)
     {
         for (int j = 0; j < 8; j++)
         {
             if (board[i][j]->isKing() && board[i][j]->color == color)
             {
-                res.push_back('a' + j);
-                res.push_back('1' + i);
-                return res;
+                return std::string{ static_cast<char>('a' + j), static_cast<char>('1' + i) };
             }
         }
     }
-    return "ti dalbibi";
+    return "";
 }
 /// <summary>
 /// checks if check on the king in the color it gets
@@ -142,6 +140,8 @@ std::string Board::WhereKing(int color)
 bool Board::isCheck(int color)
 {
     std::string KP = WhereKing(color);
+    if (KP.empty())
+        return false;
     for (int i = 0; i < 8; i++)
     {
         for (int j = 0; j < 8; j++)
@@ -150,7 +150,8 @@ bool Board::isCheck(int color)
             {
                 if (board[i][j]->color != color)
                 {
-                    if (board[i][j]->isValidMove(board[i][j]->pose, KP) == 0)
+                    std::string from{ static_cast<char>('a' + j), static_cast<char>('1' + i) };
+                    if (board[i][j]->isValidMove(from, KP) == 0)
                     {
                         return true;
                     }
@@ -188,37 +189,142 @@ Board Board::undoMove(std::string curr, std::string dst)
 
 int Board::isLegalMove(std::string curr, std::string dest)
 {
-    if (curr.length() < 2 || dest.length() < 2)
+    if (!inBounds(curr) || !inBounds(dest))
         return 5;
+
+    if (curr == dest)
+        return 7;
 
     Piece* dstP = checkpiece(dest);
     Piece* srcP = checkpiece(curr);
 
-    if (srcP->isEmpty())
-        return 6;
-
-    if (srcP->color != currPlayer)
+    if (srcP->isEmpty() || srcP->color != currPlayer)
         return 2;
 
-    if (srcP->color == dstP->color)
+    if (!dstP->isEmpty() && srcP->color == dstP->color)
         return 3;
-
-    if (curr[0] > 'h' || dest[0] > 'h' || curr[1] < '1' || dest[1] < '1' || curr[1] > '8' || dest[1] > '8')
-        return 5;
 
     int moveCheck = srcP->isValidMove(curr, dest);
     if (moveCheck != 0)
         return moveCheck;
 
-    int movingColor = srcP->color;
+    int movingColor = currPlayer;
+    Piece* prevLast = lastEatedPiece;
+    bool wasMoved = srcP->hasMoved;
+
     UpdateBoard(curr, dest);
 
     if (isCheck(movingColor))
     {
         undoMove(curr, dest);
+        srcP->hasMoved = wasMoved;
+        lastEatedPiece = prevLast;
         currPlayer = movingColor;
         return 4;
     }
 
-    return 0;
+    bool opponentInCheck = isCheck(currPlayer);
+    int result = opponentInCheck ? 1 : 0;
+
+    if (opponentInCheck && isCheckmate(currPlayer))
+        result = 8;
+
+    return result;
+}
+
+bool Board::inBounds(const std::string& pos) const
+{
+    return pos.length() == 2 &&
+        std::tolower(pos[0]) >= 'a' && std::tolower(pos[0]) <= 'h' &&
+        pos[1] >= '1' && pos[1] <= '8';
+}
+
+int Board::simulateMove(std::string curr, std::string dest, int color)
+{
+    if (!inBounds(curr) || !inBounds(dest))
+        return 5;
+
+    if (curr == dest)
+        return 7;
+
+    Piece* dstP = checkpiece(dest);
+    Piece* srcP = checkpiece(curr);
+
+    if (srcP->isEmpty() || srcP->color != color)
+        return 2;
+
+    if (!dstP->isEmpty() && srcP->color == dstP->color)
+        return 3;
+
+    int moveCheck = srcP->isValidMove(curr, dest);
+    if (moveCheck != 0)
+        return moveCheck;
+
+    int savedPlayer = currPlayer;
+    Piece* savedLast = lastEatedPiece;
+    bool wasMoved = srcP->hasMoved;
+
+    UpdateBoard(curr, dest);
+
+    int res;
+    if (isCheck(color))
+        res = 4;
+    else
+        res = isCheck(currPlayer) ? 1 : 0;
+
+    undoMove(curr, dest);
+    srcP->hasMoved = wasMoved;
+    lastEatedPiece = savedLast;
+    currPlayer = savedPlayer;
+
+    return res;
+}
+
+bool Board::hasAnyLegalMove(int color)
+{
+    int savedPlayer = currPlayer;
+    Piece* savedLast = lastEatedPiece;
+    currPlayer = color;
+
+    for (int i = 0; i < 8; i++)
+    {
+        for (int j = 0; j < 8; j++)
+        {
+            Piece* p = board[i][j];
+            if (p->isEmpty() || p->color != color)
+                continue;
+
+            std::string src{ static_cast<char>('a' + j), static_cast<char>('1' + i) };
+
+            for (int r = 0; r < 8; r++)
+            {
+                for (int c = 0; c < 8; c++)
+                {
+                    std::string dst{ static_cast<char>('a' + c), static_cast<char>('1' + r) };
+                    if (src == dst)
+                        continue;
+
+                    int code = simulateMove(src, dst, color);
+                    if (code == 0 || code == 1)
+                    {
+                        currPlayer = savedPlayer;
+                        lastEatedPiece = savedLast;
+                        return true;
+                    }
+                }
+            }
+        }
+    }
+
+    currPlayer = savedPlayer;
+    lastEatedPiece = savedLast;
+    return false;
+}
+
+bool Board::isCheckmate(int color)
+{
+    if (!isCheck(color))
+        return false;
+
+    return !hasAnyLegalMove(color);
 }

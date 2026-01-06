@@ -20,5 +20,9 @@ public:
     bool isCheck(int color);
     int isLegalMove(std::string curr, std::string dest);
     Board undoMove(std::string curr, std::string dest);
+    bool inBounds(const std::string& pos) const;
+    bool isCheckmate(int color);
+    bool hasAnyLegalMove(int color);
+    int simulateMove(std::string curr, std::string dest, int color);
 
 };
